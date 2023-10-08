@@ -7,7 +7,7 @@ export const getNews = async () => {
                 apiKey: 'cXj1vjsoa167Qqlq6mqxwdCdVZlbkID3L-M36s9hKv3SJqXY'
             }
         })
-        return response.data
+        return response.data // Получили данные
 
     } catch (error) {
         console.log(error)
