@@ -35,6 +35,7 @@ blockquote,
 dl,
 dd {
     padding: 0;
+    margin: 0;
 }
 
 ul[class] {
@@ -56,6 +57,12 @@ select {
 
 body {
     min-height: 100vh;
+}
+
+.container {
+    padding: 24px;
+    min-height: 100vh;
+
 }
 
 
