@@ -7,7 +7,7 @@ import styles from './styles.module.css'
 
 const Main = () => {
     const [news, setNews] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         const fetchNews = async () => {
