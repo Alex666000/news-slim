@@ -1,5 +1,5 @@
 import React from 'react';
-import {formatTimeAgo} from '../../../../helpers/formatTimeAgo.js'
+import {formatTimeAgo} from '../../../../components/shared/helpers/formatTimeAgo.js'
 import styles from './styles.module.css'
 
 const NewsItem = ({item}) => {
