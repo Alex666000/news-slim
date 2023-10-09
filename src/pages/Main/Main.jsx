@@ -14,7 +14,7 @@ const Main = () => {
             try {
                 setIsLoading(true)
                 const data = await getNews()
-                // console.log(news)
+
                 setNews(data.news)
                 setIsLoading(false)
             } catch (error) {
@@ -27,8 +27,8 @@ const Main = () => {
 
     return (
         <main className={styles.main}>
-            {news.length > 0 && !isLoading
-                ? <NewsBanner item={news[0]}/>
+            {news.length && !isLoading
+                ? <NewsBanner item={news[1]}/>
                 : <Skeleton count={1} type={'banner'}/>
             }
             {!isLoading
