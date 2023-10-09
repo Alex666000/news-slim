@@ -1,5 +1,5 @@
 import React from 'react';
-import {formatDate} from '../../helpers/formatDate.js'
+import {formatDate} from '../shared/helpers/formatDate.js'
 import styles from './styles.module.css'
 
 const Header = () => {
