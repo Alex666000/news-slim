@@ -21,15 +21,14 @@ const Main = () => {
                 // console.log(error)
             }
         }
-
         fetchNews()
     }, [])
 
     return (
         <main className={styles.main}>
-            {news.length && !isLoading
-                ? <NewsBanner item={news[1]}/>
-                : <Skeleton/>
+            {news.length > 0 && !isLoading
+                ? <NewsBanner item={news[0]}/>
+                : <Skeleton count={1} type={'banner'}/>
             }
             {!isLoading
                 ? <NewsList news={news}/>
