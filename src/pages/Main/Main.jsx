@@ -29,7 +29,7 @@ const Main = () => {
         <main className={styles.main}>
             {news.length && !isLoading
                 ? <NewsBanner item={news[1]}/>
-                : <Skeleton count={1} type={'banner'}/>
+                : <Skeleton/>
             }
             {!isLoading
                 ? <NewsList news={news}/>

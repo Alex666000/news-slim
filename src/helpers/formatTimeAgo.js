@@ -17,7 +17,7 @@ export const formatTimeAgo = (dateString) => {
         return 'a few seconds ago';
     } else if (timeDifference < minutesInMs) {
         const secondsAgo = Math.floor(timeDifference / secondsInMs);
-        return `${secondsAgo} seconds${secondsAgo === 1 ? '' : 'и'} ago`;
+        return `${secondsAgo} second${secondsAgo === 1 ? '' : 's'} ago`;
     } else if (timeDifference < hoursInMs) {
         const minutesAgo = Math.floor(timeDifference / minutesInMs);
         return `${minutesAgo} minute${minutesAgo === 1 ? '' : 's'} ago`;
