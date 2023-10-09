@@ -4,7 +4,7 @@ export const getNews = async () => {
     try {
         const response = await axios.get('https://api.currentsapi.services/v1/latest-news', {
             params: {
-                apiKey: 'cXj1vjsoa167Qqlq6mqxwdCdVZlbkID3L-M36s9hKv3SJqXY'
+                apiKey: 'HvM0Wi9uuxXGeAeNvqKFBxRASYlBUmqcnGeZfNvF66XRrbd-'
             }
         })
         return response.data // Получили данные
@@ -13,3 +13,4 @@ export const getNews = async () => {
         console.log(error)
     }
 }
+

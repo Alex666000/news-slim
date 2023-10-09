@@ -7,21 +7,20 @@ import styles from './styles.module.css'
 
 const Main = () => {
     const [news, setNews] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         const fetchNews = async () => {
             try {
                 setIsLoading(true)
                 const data = await getNews()
-                // console.log(news)
+
                 setNews(data.news)
                 setIsLoading(false)
             } catch (error) {
                 // console.log(error)
             }
         }
-
         fetchNews()
     }, [])
 
