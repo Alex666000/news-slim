@@ -1,5 +1,5 @@
 import React from 'react';
-import {formatTimeAgo} from '../../../helpers/formatTimeAgo.js'
+import {formatTimeAgo} from '../../../components/shared/helpers/formatTimeAgo.js'
 import Image from '../../../components/shared/Image/Image.jsx'
 import styles from './styles.module.css'
 
