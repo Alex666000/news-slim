@@ -1,13 +1,15 @@
 import Skeleton from '../../Skeleton/Skeleton.jsx'
 
-export function withSkeleton(Component, type, count) {
+export function withSkeleton(Component, type, count, direction) {
     return function WithSkeleton(props) {
         const {isLoading, ...restProps} = props
 
         if (isLoading) {
             return <Skeleton
                 type={type}
-                count={count}/>
+                count={count}
+                direction={direction}
+            />
         }
 
         return <Component {...restProps} />
